@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.guest.discussionforum.ui.NewPostActivity"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="What Does Your Robot Say?"
+        android:id="@+id/newPostTitleTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="28dp"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/userNameEditText"
+        android:layout_below="@+id/newPostTitleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:textSize="26dp"
+        android:hint="Username"
+        android:textAlignment="center"
+        android:background="@drawable/cool_button" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/messageEditText"
+        android:layout_below="@+id/userNameEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:lines="10"
+        android:background="@drawable/cool_button"
+        android:padding="10dp"
+        android:hint="Enter Your Message Here." />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submitButton"
+        android:layout_below="@+id/messageEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:elegantTextHeight="false"
+        android:textSize="26sp"
+        android:allowUndo="false"
+        android:background="@drawable/cool_button" />
+
+</RelativeLayout>

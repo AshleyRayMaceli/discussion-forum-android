@@ -3,14 +3,13 @@ package com.example.guest.discussionforum.models;
 public class Thread {
     String userName;
     String message;
-    int score;
+    int score = 0;
 
     public Thread() {}
 
-    public Thread(String userName, String message, int score) {
+    public Thread(String userName, String message) {
         this.userName = userName;
         this.message = message;
-        this.score = score;
     }
 
     public String getUserName() {
