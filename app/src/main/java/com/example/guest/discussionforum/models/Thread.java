@@ -5,12 +5,12 @@ public class Thread {
     String message;
     int score = 0;
 
-    public Thread() {}
-
     public Thread(String userName, String message) {
         this.userName = userName;
         this.message = message;
     }
+
+    public Thread() {}
 
     public String getUserName() {
         return userName;
