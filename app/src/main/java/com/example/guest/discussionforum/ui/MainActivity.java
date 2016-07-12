@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void setUpFirebaseAdapter() {
-        mFirebaseAdapter = new FirebaseRecyclerAdapter<Thread, FirebaseThreadViewHolder>
-                (Thread.class, R.layout.thread_list_item, FirebaseThreadViewHolder.class,
-                        mThreadReference) {
+            mFirebaseAdapter = new FirebaseRecyclerAdapter<Thread, FirebaseThreadViewHolder>
+                    (Thread.class, R.layout.thread_list_item, FirebaseThreadViewHolder.class,
+                            mThreadReference) {
 
             @Override
             protected void populateViewHolder(FirebaseThreadViewHolder viewHolder,

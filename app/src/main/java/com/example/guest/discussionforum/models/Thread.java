@@ -1,7 +1,10 @@
 package com.example.guest.discussionforum.models;
 
+import org.parceler.Parcel;
+
 import java.util.ArrayList;
 
+@Parcel
 public class Thread {
     String userName;
     String message;

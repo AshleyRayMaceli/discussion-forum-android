@@ -118,7 +118,7 @@
         <EditText
             android:layout_width="300dp"
             android:layout_height="100dp"
-            android:id="@+id/editText"
+            android:id="@+id/commentEditText"
             android:layout_marginTop="26dp"
             android:lines="10"
             android:background="@drawable/cool_button"
@@ -133,7 +133,7 @@
             android:layout_height="wrap_content"
             android:text="Submit"
             android:id="@+id/submitCommentButton"
-            android:layout_below="@+id/editText"
+            android:layout_below="@+id/commentEditText"
             android:layout_centerHorizontal="true"
             android:background="@drawable/cool_button"
             android:layout_marginTop="10dp"

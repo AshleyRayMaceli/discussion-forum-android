@@ -18,7 +18,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.NewPostActivity" />
-        <activity android:name=".ui.ThreadDetailActivity"></activity>
+        <activity android:name=".ui.ThreadDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
