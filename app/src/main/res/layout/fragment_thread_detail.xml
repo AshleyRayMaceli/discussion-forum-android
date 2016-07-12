@@ -96,4 +96,48 @@
 
     </GridLayout>
 
+    <ScrollView
+        android:layout_width="380dp"
+        android:layout_height="224dp"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:id="@+id/commentsRecyclerView"
+        android:layout_gravity="center" />
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:layout_gravity="center_horizontal|bottom">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:id="@+id/editText"
+            android:layout_marginTop="26dp"
+            android:lines="10"
+            android:background="@drawable/cool_button"
+            android:padding="10dp"
+            android:hint="Enter Comment Here."
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/submitCommentButton"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/cool_button"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorAccent" />
+    </RelativeLayout>
+
 </FrameLayout>
