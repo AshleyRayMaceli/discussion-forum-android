@@ -1,9 +1,12 @@
 package com.example.guest.discussionforum.models;
 
+import java.util.ArrayList;
+
 public class Thread {
     String userName;
     String message;
     int score = 0;
+    ArrayList<String> comments = new ArrayList<String>();
 
     public Thread(String userName, String message) {
         this.userName = userName;
