@@ -23,4 +23,12 @@ public class Thread {
     public int getScore() {
         return score;
     }
+
+    public void upVote() {
+        score ++;
+    }
+
+    public void downVote() {
+        score --;
+    }
 }

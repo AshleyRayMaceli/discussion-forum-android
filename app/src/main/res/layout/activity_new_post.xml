@@ -37,27 +37,42 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:id="@+id/messageEditText"
-        android:layout_below="@+id/userNameEditText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="29dp"
         android:lines="10"
         android:background="@drawable/cool_button"
         android:padding="10dp"
-        android:hint="Enter Your Message Here." />
+        android:hint="Enter Your Message Here."
+        android:layout_below="@+id/userNameEditText"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="Submit"
         android:id="@+id/submitButton"
-        android:layout_below="@+id/messageEditText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
         android:clickable="true"
         android:contextClickable="true"
         android:elegantTextHeight="false"
         android:textSize="26sp"
         android:allowUndo="false"
-        android:background="@drawable/cool_button" />
+        android:background="@drawable/cool_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/messageEditText"
+        android:layout_alignStart="@+id/messageEditText"
+        android:layout_marginBottom="45dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/categorySpinner"
+        android:layout_above="@+id/submitButton"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/cool_button"
+        android:layout_alignRight="@+id/messageEditText"
+        android:layout_alignEnd="@+id/messageEditText"
+        android:layout_alignLeft="@+id/messageEditText"
+        android:layout_alignStart="@+id/messageEditText"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center" />
 
 </RelativeLayout>
