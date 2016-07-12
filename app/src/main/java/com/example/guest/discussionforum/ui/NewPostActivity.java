@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.example.guest.discussionforum.Constants;
 import com.example.guest.discussionforum.models.Thread;
@@ -53,17 +54,15 @@ public class NewPostActivity extends AppCompatActivity implements View.OnClickLi
 
             String userName = mUserNameEditText.getText().toString();
             String message = mMessageEditText.getText().toString();
-
             Thread newThread = new Thread(userName, message);
 
-            saveThreadToFirebase(newThread);
+            DatabaseReference pushRef = mThreadsReference.push();
+            String pushId = pushRef.getKey();
+            newThread.setPushId(pushId);
+            pushRef.setValue(newThread);
 
             Intent intent = new Intent(NewPostActivity.this, MainActivity.class);
             startActivity(intent);
         }
-    }
-
-    public void saveThreadToFirebase(Thread thread) {
-        mThreadsReference.push().setValue(thread);
     }
 }

@@ -41,6 +41,12 @@
                 android:layout_width="211dp"
                 android:layout_height="match_parent">
 
+                <ScrollView
+                    android:layout_width="380dp"
+                    android:layout_height="224dp"
+                    android:id="@+id/messageScrollView"
+                    android:layout_gravity="center">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -51,7 +57,10 @@
                     android:textColor="@color/colorAccent"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true" />
+                    android:layout_alignParentStart="true"
+                    android:maxLines="3" />
+
+                </ScrollView>
             </RelativeLayout>
         </LinearLayout>
 
@@ -126,7 +135,9 @@
             android:hint="Enter Comment Here."
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:clickable="false"
+            android:backgroundTint="@color/colorAccent" />
 
         <Button
             android:layout_width="250dp"
