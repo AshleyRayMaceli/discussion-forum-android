@@ -1,3 +1,5 @@
+![Screenshots](screenshots.jpg)
+
 # _Robotic Discussion Forum_
 
 #### _An Android app that allows users view and comment on a message board made for robots!_
@@ -11,7 +13,7 @@ _An Android mobile app in which users can post new threads and comments to a mes
 ## Setup/Installation Requirements
 
 * _Ensure that Android Studio is installed on your machine._
-* _Using the command line, clone the discussion-forum repository to your desktop using the command "git clone https://github.com/AdamCraig/discussion-forum"_
+* _Using the command line, clone the repository to your desktop using the command "git clone https://github.com/AshleyRayMaceli/discussion-forum-android"_
 * _Open the package using Android Studio, choose your emulator, and run the app._
 
 ## Known Bugs
@@ -21,7 +23,7 @@ _No known bugs at this time._
 ## Support and contact details
 
 _For all issues and support, please contact:
-Adam Craig at ajcraig@suffolk.edu_
+Ashley Maceli at ashley.maceli@gmail.com_
 
 ## Technologies Used
 
